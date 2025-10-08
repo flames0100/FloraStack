@@ -1,0 +1,3 @@
+
+import { notFound } from 'next/navigation';
+export default function ProductPage({ params }) { const product = { id: params.slug, title: 'Sample Product', price: '$19', desc: 'A great template' }; if(!product) notFound(); return (<section className="container py-12"><div className="max-w-3xl card p-6"><h1 className="text-2xl font-bold">{product.title}</h1><div className="mt-4 text-slate-600 dark:text-slate-400">{product.desc}</div><div className="mt-6 text-2xl font-bold">{product.price}</div><div className="mt-6"><button className="px-4 py-2 bg-flora-500 text-white rounded-lg">Buy</button></div></div></section>); }

@@ -1,0 +1,1 @@
+Add an Open Graph image at public/og-image.png
